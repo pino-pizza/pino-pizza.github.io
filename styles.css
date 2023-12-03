@@ -215,3 +215,20 @@ main {
   max-width: 100%;
 }
 
+.section-center {
+  gap: 1.5rem; /* Adjust as needed */
+}
+
+.menu-item {
+  max-width: 100%; /* Ensure items take full width on smaller screens */
+}
+@media only screen and (max-width: 600px) {
+  /* Mobile-specific styles go here */
+  .menu-item {
+    grid-template-columns: 1fr; /* Full width for mobile */
+  }
+
+  .photo {
+    height: 120px; /* Adjust as needed */
+  }
+}
